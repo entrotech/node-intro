@@ -31,7 +31,7 @@ app.get("/hello/:name", (req, res) => {
   res.status(200).json({ hello: req.params.name });
 });
 
-app.get("/hackernews/:q", (req, res) => {
+app.get("/api/hackernews/:q", (req, res) => {
   axios
     .get(`https://hn.algolia.com/api/v1/search?query=${req.params.q}`)
     .then(response => {

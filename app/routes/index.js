@@ -1,7 +1,10 @@
 const router = require("express").Router();
-
-module.exports = router;
-
 const newsController = require("../controllers/news.controller");
 
-router.get("/api/news/:q", newsController.get);
+router.get("/hello/:name", (req, res) => {
+  res.status(200).json({ hello: req.params.name });
+});
+
+router.get("/api/hackernews/:q", newsController.get);
+
+module.exports = router;
