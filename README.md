@@ -1,6 +1,7 @@
 # Node Intro
 
-##Installation
+## Installation
+
 You will need to have Node and NPM installed first.
 Then clone this repo to your hard drive and open a terminal window and navigate to the
 root level directory containing the package.json file.
@@ -13,7 +14,8 @@ npm install
 
 to download the requisite npm modules.
 
-##Running the Examples
+## Running the Examples
+
 Each of the \*.js files starting with a two-digit number is a separate example that can be followed in
 sequence as a quick intro to node.
 
@@ -42,7 +44,8 @@ locahost:3004/api/hackernews/<some topic>
 
 to exercise the express server.
 
-##Refactored Express Server
+## Refactored Express Server
+
 Example 15 is then re-factored into a more standard folder and file structure for non-trivial
 applications comprised of the server.js file and the files foudn under the /app directory. This splits
 the routing and services into separate js modules.
